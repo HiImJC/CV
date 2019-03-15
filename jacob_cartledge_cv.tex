@@ -1,0 +1,151 @@
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[a4paper,10pt]{article} % Default font size and paper size
+
+\usepackage{fontspec} % For loading fonts
+\defaultfontfeatures{Mapping=tex-text}
+\setmainfont[SmallCapsFont = Fontin SmallCaps]{Fontin} % Main document font
+
+\usepackage{xunicode,xltxtra,url,parskip} % Formatting packages
+
+\usepackage[usenames,dvipsnames]{xcolor} % Required for specifying custom colors
+
+\usepackage[big]{layaureo} % Margin formatting of the A4 page, an alternative to layaureo can be \usepackage{fullpage}
+% To reduce the height of the top margin uncomment: \addtolength{\voffset}{-1.3cm}
+
+\usepackage{hyperref} % Required for adding links	and customizing them
+\definecolor{linkcolour}{rgb}{0,0.2,0.6} % Link color
+\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour,linkcolor=linkcolour} % Set link colors throughout the document
+
+\usepackage{titlesec} % Used to customize the \section command
+\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule] % Text formatting of sections
+\titlespacing{\section}{0pt}{3pt}{3pt} % Spacing around sections
+
+\begin{document}
+
+\pagestyle{empty} % Removes page numbering
+
+\font\fb=''[cmr10]'' % Change the font of the \LaTeX command under the skills section
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION
+%----------------------------------------------------------------------------------------
+
+\par{\centering{\Huge Jacob Steven Eric \textsc{Cartledge}}\bigskip\par} % Your name
+
+\section{Personal}
+
+\begin{tabular}{rl}
+\textsc{Date of Birth:} & 3 \textsuperscript{rd} July 1992 \\
+\textsc{Address:} & 13 Church St, Mow Cop, Staffordshire, ST74PB \\
+\textsc{Phone:} & 07715620553 \\
+\textsc{email:} & \href{mailto:hi.im.jc@gmail.com}{hi.im.jc@gmail.com}
+\end{tabular}
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE 
+%----------------------------------------------------------------------------------------
+
+\vspace{1cm}
+\section{Previous Employment}
+
+\begin{tabular}{r|p{11cm}}
+
+\emph{Current} & Senior Software Developer at \textsc{bet365}, Stoke-On-Trent  \\
+\textsc{September 2018} & \footnotesize{In addition to the below, my responsibility's now include; driving the systems in the correct direction, mentoring other members of staff and giving feedback to management.}\\
+\multicolumn{2}{c}{} \\
+
+%------------------------------------------------
+\textsc{Feb 2015-Sept 2018} & Software Developer at \textsc{bet365}, Stoke-On-Trent \emph{}\\
+& \footnotesize{Working within a small team of developers, developing distributed, highly scaleable systems using Golang and Erlang. Other responsibility's included; maintaining the production environment, handing live issues and QA of other team members work.}\\
+\multicolumn{2}{c}{} \\
+
+%------------------------------------------------
+\textsc{July 2015-Feb 2016} & Software Developer at \textsc{Datasys}, Manchester \emph{} \\
+& \footnotesize{Working on the development of a real time messaging framework for use within the UK's rail network. Mainly developing with RabbitMQ and Java.} \\
+\multicolumn{2}{c}{} \\
+
+%------------------------------------------------
+\textsc{June 2013-March 2015} & Software Developer at \textsc{Intergral GmbH}, Boeblingen (Germany) \emph{} \\
+& \footnotesize{Initial 14 month Placement, developing a cloud based solution using PHP and NoSql. Continuing remotely beyond my placement, working on their flagship product in Java and AngularJS.} \\
+
+\end{tabular}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+
+\vspace{1cm}
+\section{Education}
+
+\begin{tabular}{rl}	
+
+2011 - 2015 & Undergraduate Degree in \textsc{}\textsc{Software Engineering} | \normalsize\textbf{Staffordshire University} \\
+& Degree based around \textsc{java} and \textsc{oop} programming \\
+& FYP: Annotation Based Java Virtual Machine Profiler | \small Supervisor: Graham \textsc{Mansfield}\\
+& Graduated with : \emph{1st Class Honors} \\
+&\\
+
+%------------------------------------------------
+
+2009 - 2011 & A-Levels | \normalsize\textbf{Newcastle Under-Lyme College} \\
+& \textsc{Graphic Design}: B       \textsc{Computing}: C      \textsc{Physical Education}: E \\
+& With respective \textsc{AS} levels. \\
+& \\
+
+%------------------------------------------------
+2003 - 2008 & GCSE's | \normalsize\textbf{Chesterton Community Sports College} \\
+& \textsc{9 gcse's a* - c} \\
+&\\
+\end{tabular}
+
+\vspace{1cm}
+%----------------------------------------------------------------------------------------
+%	COMPUTER SKILLS 
+%----------------------------------------------------------------------------------------
+\section{Programming Skills}
+
+\begin{tabular}{rl}
+  Basic Knowledge: & \textsc{c}, \textsc{c++}, \textsc{Jenkins}, \textsc{Docker}, \textsc{JIRA}, {\fb \LaTeX}, \textsc{Erlang} \setmainfont[SmallCapsFont=Fontin SmallCaps]{Fontin-Regular}\\
+
+Intermediate Knowledge: & \textsc{Golang}, \textsc{vim}, \textsc{linux} \\
+\end{tabular}
+
+\vspace{1cm}
+%----------------------------------------------------------------------------------------
+%	PERSONAL PROFILE
+%----------------------------------------------------------------------------------------
+\section{Professional Summary}
+Experienced software developer, with 5 and a half years experience developing distributed, low latency systems. Capable of developing systems from inital idea to live code. Well versed in the debugging and mentality required to deal with customer facing issues. I'm looking to improve my technical ability whilst working on products that matter to people.
+
+\vspace{1cm}
+%----------------------------------------------------------------------------------------
+%	INTERESTS AND ACTIVITIES
+%----------------------------------------------------------------------------------------
+\section{Interests and Activities}
+
+Technology, Programming, Bouldering\\
+Fitness, Nutrition\\
+Motorsport, F1, Mechanics
+
+
+\vspace{1cm}
+%----------------------------------------------------------------------------------------
+%	REFERENCES
+%----------------------------------------------------------------------------------------
+
+\section{References}
+
+References available upon request.
+%----------------------------------------------------------------------------------------
+
+\vspace*{\fill}
+\vspace{1cm}
+\begin{center}
+\textsc{CV SOURCE:}  \href{https://github.com/HiImJC/CV}{https://github.com/HiImJC/CV}
+\end{center}
+
+\end{document}
+
